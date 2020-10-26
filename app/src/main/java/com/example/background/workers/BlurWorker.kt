@@ -27,7 +27,7 @@ import com.example.background.KEY_IMAGE_URI
 import timber.log.Timber
 
 class BlurWorker(ctx: Context, params: WorkerParameters) : Worker(ctx, params) {
-
+//Random piece of text
     override fun doWork(): Result {
         val appContext = applicationContext
 
