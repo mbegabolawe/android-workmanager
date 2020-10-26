@@ -25,4 +25,4 @@ RUN mkdir "$ANDROID_HOME" .android \
 RUN $ANDROID_HOME/tools/bin/sdkmanager --update
 RUN $ANDROID_HOME/tools/bin/sdkmanager "build-tools;29.0.2" \
     "platforms;android-${ANDROID_VERSION}" \
-    "platform-tools"all build-essential -y && apt-get install file -y && apt-get install apt-utils -y
+    "platform-tools"
