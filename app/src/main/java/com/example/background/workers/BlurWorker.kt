@@ -28,6 +28,7 @@ import timber.log.Timber
 
 class BlurWorker(ctx: Context, params: WorkerParameters) : Worker(ctx, params) {
 //Random piece of text
+    // Another random comment
     override fun doWork(): Result {
         val appContext = applicationContext
 
