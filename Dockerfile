@@ -9,7 +9,9 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 WORKDIR project/
 SHELL ["/bin/bash", "-c"]
 
-RUN chown -R 8080:8080 $ANDROID_HOME
+RUN chown -R jenkins:jenkins $ANDROID_HOME
+
+USER jenkins
 
 # Install dependencies
 RUN DEBIAN_FRONTEND=noninteractive apt update && apt install -y openjdk-8-jdk git unzip wget
