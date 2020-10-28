@@ -40,6 +40,7 @@ class BlurWorker(ctx: Context, params: WorkerParameters) : Worker(ctx, params) {
         return try {
             if (TextUtils.isEmpty(resourceUri)) {
                 Timber.e("Invalid input uri")
+                //Timber comment
                 throw IllegalArgumentException("Invalid input uri")
             }
 
