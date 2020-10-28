@@ -58,7 +58,7 @@ class SaveImageToFileWorker(ctx: Context, params: WorkerParameters) : Worker(ctx
 
                 Result.success(output)
             } else {
-                Timber.e("Writing to MediaStore failed")
+                Timber.e("Writing to MediaStore failed unfortunately")
                 Result.failure()
             }
         } catch (exception: Exception) {
