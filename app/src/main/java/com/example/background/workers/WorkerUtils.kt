@@ -52,8 +52,6 @@ import java.util.UUID
  * For this codelab, this is used to show a notification so that you know when different steps
  * of the background work chain are starting
  *
- * @param message Message shown on the notification
- * @param context Context needed to create Toast
  */
 fun makeStatusNotification(message: String, context: Context) {
 
